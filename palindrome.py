@@ -29,9 +29,12 @@ Output: false
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         # def isPalindrome(self, x: int) -> bool:
-        return str(x) == str(x)[::-1]
+        if str(x) == str(x)[::-1]:
+            return True
+        else:
+            return False
 
 
 a = Solution()
-b = a.isPalindrome(123)
+b = a.isPalindrome(123321)
 print(b)
